@@ -1,0 +1,30 @@
+.top_bar {
+  color: var(--white);
+  height: 40px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.address_container,
+.contact_details_container,
+.phone_number_container,
+.email_container {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: 13.3px;
+}
+
+.contact_details_container {
+  gap: 1rem;
+}
+
+.top_bar_content_container {
+  flex-grow: 1;
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
