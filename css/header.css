@@ -1,0 +1,153 @@
+header {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: .8rem .6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .6rem;
+  position: relative;
+}
+
+nav {
+  flex-grow: 1;
+  max-width: 429px;
+  display: none;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .4rem 0.4rem 1.2rem;
+  height: 37px;
+  max-width: 80px;
+  border-radius: 30px;
+  color: var(--text-color-1);
+  padding: .4rem 1.2rem;
+  cursor: pointer;
+
+}
+
+.nav_list a {
+  font-size: medium;
+  font-weight: var(--medium);
+  line-height: 20px;
+}
+
+.nav_list li:hover {
+  background-color: var(--nav-link-bg-color);
+  transition: all .3s;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+  cursor: pointer;
+}
+
+.logo_text {
+  font-size: 20px;
+  font-weight: var(--semi-bold);
+}
+
+.auth_listing_container {
+  display: none;
+}
+
+.login_register_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+  font-weight: var(--medium);
+}
+
+.add_listing_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  height: 50px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: var(--medium);
+  padding: .5rem 1rem;
+}
+
+nav.mobile_nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: calc((100% - 40px ) / 2);
+  right: .5rem;
+  width: 0;
+  overflow: hidden;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.mobile_nav > .nav_list {
+  flex-direction: column;
+  gap: .5rem;
+  margin: .7rem .5rem;
+}
+
+.mobile_nav li {
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100px;
+}
+
+.mobile_nav li a {
+  line-height: 16px;
+}
+
+.bars_icon,
+.x_icon {
+  position: absolute;
+  top: calc((100% - 30px) / 2);
+  right: .6rem;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+nav.mobile_nav > .auth_listing_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: .7rem 1rem;
+}
+
+.hidden {display: none;}
+
+nav.mobile_nav.show_mobile_nav {
+  width: 95%;
+  transition: all .5s;
+}
+
+@media only screen and (min-width: 900px) {
+  nav {display: block;}
+
+  .auth_listing_container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav.mobile_nav,
+  .bars_icon,
+  .x_icon {
+    display: none;
+  }
+}

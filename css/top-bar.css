@@ -2,7 +2,17 @@
   color: var(--white);
   height: 40px;
   background-color: var(--primary-color);
+  align-items: center;
+  padding-inline: .6rem;
+  display: none;
+}
+
+.top_bar_content_container {
+  flex-grow: 1;
+  max-width: 1440px;
+  margin-inline: auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -13,6 +23,11 @@
   display: flex;
   align-items: center;
   gap: .4rem;
+}
+
+.address,
+.phone_number,
+.email {
   font-size: 13.3px;
 }
 
@@ -20,11 +35,6 @@
   gap: 1rem;
 }
 
-.top_bar_content_container {
-  flex-grow: 1;
-  max-width: 1440px;
-  margin-inline: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media only screen and (min-width: 570px) {
+  .top_bar {display: flex;}
 }

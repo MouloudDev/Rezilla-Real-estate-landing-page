@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Geist+Mono:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 @import url(../css/top-bar.css);
+@import url(../css/header.css);
 
 * {
   margin: 0;
@@ -23,6 +24,7 @@
   --text-color-2: #808080;
   --text-color-3: #AAAAAA;
   --text-color-4: #D4D4D4;
+  --nav-link-bg-color: rgba(67, 97, 238, .3);
   /* font weight variables */
   --normal: 400;
   --medium: 500;
@@ -32,4 +34,15 @@
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
