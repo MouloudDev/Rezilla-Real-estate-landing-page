@@ -29,6 +29,8 @@
 .phone_number,
 .email {
   font-size: 13.3px;
+  text-align: center;
+  line-height: 20px;
 }
 
 .contact_details_container {

@@ -80,7 +80,7 @@ nav {
   background-color: var(--primary-color);
   color: var(--white);
   font-weight: var(--medium);
-  padding: .5rem 1rem;
+  padding: .4rem 1.4rem;
 }
 
 nav.mobile_nav {
@@ -89,6 +89,7 @@ nav.mobile_nav {
   position: absolute;
   top: calc((100% - 40px ) / 2);
   right: .5rem;
+  z-index: 9;
   width: 0;
   overflow: hidden;
   background-color: var(--white);
