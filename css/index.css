@@ -4,8 +4,9 @@
 @import url(../css/top-bar.css);
 @import url(../css/header.css);
 @import url(../css/hero-section.css);
+@import url(../css/who-we-are-section.css);
 
-*,*::before, *::after {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
