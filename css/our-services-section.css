@@ -1,0 +1,82 @@
+.our_services_section {
+  width: 100%;
+  background-color: rgba(212, 212, 212, .3);
+  padding: 5rem .2rem 6rem;
+  margin-top: 8rem;
+}
+
+.our_services_section span,
+.our_services_section p,
+.our_services_section h2,
+.our_services_section h3 {
+  text-align: center;
+}
+
+.our_services_section > .title {
+  font-size: clamp(16px, 6vw, 19.4px);
+  font-weight: var(--medium);
+  text-transform: uppercase;
+  color: var(--text-color-1);
+}
+
+.our_services_section > .heading {
+  font-size: clamp(27.6px, 8vw, 39.8px);
+  font-weight: var(--semi-bold);
+  margin-top: 1rem;
+}
+
+/**************************
+servies list *************/
+.services_list {
+  display: grid;
+  justify-content: center;
+  gap: clamp(.6rem, 5%, 2rem);
+  padding: .3rem;
+}
+
+.service_item {
+  margin-top: 3rem;
+  padding: 1rem .5rem;
+  background-color: var(--white);
+  border-radius: 30px;
+  box-shadow: 4px 10px 30px 0px rgba(0, 0, 0, .03);
+  width: clamp(250px, 60vw, 340px);
+  max-width: 340px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+}
+
+.service_icon_container {
+  width: clamp(60px, 50%, 90px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: var(--blue);
+  box-shadow: 4px 10px 30px 0 rgba(67, 97, 238, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service_title {
+  font-size: clamp(16px, 5vw, 19.4px);
+  font-weight: var(--medium);
+  color: var(--text-color-1);
+  margin-top: .5rem;
+}
+
+.service_description {
+  font-size: clamp(13.3px, 5vw, 16px);
+  color: var(--text-color-2);
+  line-height: 26px;
+  max-width: 220px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .services_list {
+    grid-template-columns: repeat(3, auto);
+  }
+}
