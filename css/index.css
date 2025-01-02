@@ -5,6 +5,7 @@
 @import url(../css/header.css);
 @import url(../css/hero-section.css);
 @import url(../css/who-we-are-section.css);
+@import url(../css/latest-properties-section.css);
 
 *, *::before, *::after {
   margin: 0;

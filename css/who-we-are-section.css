@@ -30,7 +30,6 @@
 }
 
 .who_we_are_content > .heading {
-  font-size: 39.8px;
   font-size: clamp(27.6px, 10vw, 39.8px);
   font-weight: var(--semi-bold);
   line-height: clamp(auto, 5vw, 47px);
