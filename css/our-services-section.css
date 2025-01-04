@@ -22,6 +22,7 @@
 .our_services_section > .heading {
   font-size: clamp(27.6px, 8vw, 39.8px);
   font-weight: var(--semi-bold);
+  color: var(--light-black);
   margin-top: 1rem;
 }
 

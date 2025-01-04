@@ -7,6 +7,7 @@
 @import url(../css/who-we-are-section.css);
 @import url(../css/latest-properties-section.css);
 @import url(../css/our-services-section.css);
+@import url(../css/neighbourhood-properties-section.css);
 
 *, *::before, *::after {
   margin: 0;
@@ -24,6 +25,7 @@
   --red: #F72585;
   --white: #ffffff;
   --black: #000000;
+  --light-black: #0B090A;
   --text-color-1: #2B2B2B;
   --text-color-2: #808080;
   --text-color-3: #AAAAAA;
