@@ -10,6 +10,7 @@
 @import url(../css/neighbourhood-properties-section.css);
 @import url(../css/our-experts-section.css);
 @import url(../css/latest-blogs-posts-section.css);
+@import url(../css/testimonials-section.css);
 
 *, *::before, *::after {
   margin: 0;
