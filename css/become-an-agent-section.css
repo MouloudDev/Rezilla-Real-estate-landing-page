@@ -1,0 +1,105 @@
+.become_an_agent_section {
+  max-width: 1200px;
+  margin: 7rem auto;
+  padding-top: 5rem;
+  padding-inline: 1rem;
+  display: grid;
+  gap: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 40px;
+}
+
+.agent_img_container {
+  order: 2;
+  max-width: 358px;
+}
+
+.agent_img_container > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.become_an_agent_section .heading {
+  font-size: clamp(27.6px, 5vw, 39.8px);
+  font-weight: var(--semi-bold);
+}
+
+.become_an_agent_section .description {
+  font-size: clamp(13.3px, 2vw, 16px);
+  max-width: 273px;
+}
+
+.register_now_button {
+  font-weight: var(--medium);
+  background-color: var(--white);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 30px;
+  padding: .8rem 1rem;
+  width: clamp(38px, 90%, 180px);
+  line-height: 100%;
+  vertical-align: middle;
+  transition: all .3s;
+}
+
+.register_now_button:hover {
+  border: 1px solid var(--white);
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+@media only screen and (min-width: 500px) {
+  .become_an_agent_section {
+    padding: 0 .7rem 0 0;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    align-items: end;
+  }
+
+  .agent_img_container {
+    order: 0;
+    grid-row: 1 / span 2;
+  }
+
+  .cta_content_container,
+  .register_now_button {
+    align-self: center;
+  }
+
+  .register_now_button {
+    margin-bottom: .5rem;
+  }
+}
+
+@media only screen and (min-width: 670px) {
+  .become_an_agent_section .description {
+    max-width: 344px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .become_an_agent_section {
+    padding: 0;
+    grid-template-rows: 260px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    max-height: 260px;
+  }
+
+  .agent_img_container {
+    max-height: 260px;
+    position: relative;
+  }
+
+  .agent_img_container > img {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .register_now_button {
+    margin-left: 2rem;
+  }
+}
