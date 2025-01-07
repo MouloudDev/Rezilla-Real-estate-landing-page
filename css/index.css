@@ -12,6 +12,7 @@
 @import url(../css/latest-blogs-posts-section.css);
 @import url(../css/testimonials-section.css);
 @import url(../css/become-an-agent-section.css);
+@import url(../css/footer.css);
 
 *, *::before, *::after {
   margin: 0;
